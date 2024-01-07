@@ -6,3 +6,5 @@ dist
 .vercel
 .idea
 .vscode
+pnpm-lock.yaml
+package-lock.json

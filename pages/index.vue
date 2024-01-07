@@ -1,13 +1,13 @@
 <template>
-  <div class="page-index">
-    <Logos />
-    <Examples />
-  </div>
+    <div class="h-1100px">
+        <HelloWorldComponent />
+    </div>
 </template>
 
+<script lang="ts" setup>
+
+
+</script>
+
 <style>
-.page-index {
-  padding-top: 60px;
-  text-align: center;
-}
 </style>

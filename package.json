@@ -1,22 +1,22 @@
 {
-  "name": "element-plus-nuxt-starter",
+  "name": "yuyuko-nuxt-starter",
   "packageManager": "pnpm@8.12.1",
-  "version": "0.1.0",
-  "description": "Element Plus with Nuxt 3 Minimal Starter",
+  "version": "1.0",
+  "description": "Yuyuko Private Nuxt Template",
   "repository": {
     "type": "git",
-    "url": "git://github.com/element-plus/element-plus-nuxt-starter"
+    "url": "git://github.com/DoraemonQWQ/next-template"
   },
-  "author": "Element Plus Team",
+  "author": "Yuyuko",
   "license": "MIT",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "preview": "nuxi preview",
+    "dev": "nuxi dev --host 127.0.0.1 --port 3000 --dotenv env/.env.dev",
+    "build": "nuxi build --port 80 --dotenv env/.env.prod",
+    "preview": "nuxi preview --dotenv env/.env.prod",
     "start": "node .output/server/index.mjs",
-    "generate": "nuxi generate",
+    "generate": "nuxi generate --dotenv env/.env.prod",
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.7",
     "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/tailwindcss": "^6.10.1",
     "@pinia/nuxt": "^0.5.1",
     "@unocss/nuxt": "^0.58.0",
     "@vueuse/nuxt": "^10.7.0",
